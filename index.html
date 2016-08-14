@@ -3,9 +3,10 @@
     <head>
         <title> UXPA 2017 </title>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">	
-        <link rel="shortcut icon" href="../favicon.png" type="image/png">
+        <link rel="shortcut icon" href="favicon.png" type="image/png">
         <style>
             * {
                 padding: 0;
@@ -27,13 +28,10 @@
             a {
                 text-decoration: none;
                 cursor: pointer;
-                margin-top: 10px;
-                display: block;
             }
 
             li {
-                list-style-type: square;
-                margin: 5px 0 10px 20px;
+                list-style: none;
             }
 
             *, *:after, *:before {
@@ -52,243 +50,187 @@
             
             .content {
                 width: 100%;
-                margin: 50px 0;
-
             }
+            
             section {
-                width: 90%;
-                margin: 0 auto;
-                border: 1px solid #F1F2F4;
-            }
-            .split-section {
+                
                 width: 100%;
-                height: 60px;
-                line-height: 60px;
-                background-color: #00b8b4;
+                text-align: center;
                 color: #fff;
-                cursor: pointer;
             }
-            .split-section span{
-                text-align: center;
-                width: 33%;
-                display: inline-block;
-                text-transform: uppercase;
+            
+            .jumbotron {
+                background-image: url("Toronto_Banner4.jpg");
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
-            .active {
-                background-color: #fff !important;
-                color: #000 !important;
-                font-weight: 600;
-            }
-            .sub-section {
-                display: none;
+            
+            .place_time {
+                /*position: absolute;*/
                 width: 80%;
-                margin: 40px auto;
-                padding: 10px;
-                display: none;
+                margin: 0 auto;
+                /*top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);*/
+                text-shadow: 0 0 0.5em rgba(0,0,0,0.9);
+                padding-top: 100px;
             }
-            .show {
-                display: block !important;
+            
+            p {
+                font-size: 20px;
             }
-            h3 {
+            
+            .place_time h1, .place_time h3 {
                 text-transform: uppercase;
             }
-            h1 {
-                text-align: center;
-                text-transform: uppercase;
-                margin-bottom: 40px;
+            
+            .place_time h1 {
+                font-size: 5em;
             }
+            
+            .place_time h3 {
+                font-size: 2.5em;
+            }
+            
+            footer {
+                width: 100%;
+                background: #505050;
+                height: 50px;
+            }
+            
+            section img {
+                border: 8px solid white;
+                border-radius: 50%;
+            }
+            
+            .chairs {
+                /*text-align: center;*/
+                margin-top: 30px;
+                display: inline-block;
+                width: 25%;
+            }
+            
+            .chairs p {
+                font-style: italic;
+            }
+            
+            a {
+                color: #fff;
+            }
+            
+            input {
+                width: 300px;
+                line-height: 30px;
+                height: 30px;
+                border: none;
+                padding: 0 10px;
+                font-size: 16px; 
+            }
+            button {
+                background: #65B24C;
+                height: 75px;
+                border: none;
+                font-size: 18px;
+                cursor: pointer;
+                border-radius: 7px;
+                box-shadow: 0 5px #025626;
+                padding: 25px 25px;
+            }
+            #mc_embed_signup{width:500px; margin: 0 auto; padding: 5px 0;}
+            .button {
+                background: #fff !important;
+                color: #000 !important;
+                font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important;
+                height: 30px !important;
+                border: none;
+                /*padding: 0 10px !important;*/
+                font-size: 18px !important;
+                width: 50% !important;
+                
+            }
+            
+            label {
+                font-size: 18px !important;
+                font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important;
+                font-weight: 400 !important;
+            }
+            
+            .clear {
+                display: inline-block !important;
+                vertical-align: top;
+            }
+            
+            input {
+                display: inline-block !important;
+                font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important;
+            }
+
+            button a {
+                color: #fff;
+                text-transform: uppercase;
+            }
+            /*clear:left; font:14px Helvetica,Arial,sans-serif;  */
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
         </style>
         
     </head>
     <body>
         <div class="container">
             <header> 
-                <a href="../"> <img src="../UXPA-2017-Logo.png" width="400" height="auto" alt="logo" style="padding: 10px 0;"> </a>
+                <img src="UXPA-2017-Logo.png" width="400" height="auto" alt="logo" style="padding: 10px 0;">
             </header>
             <div class="content"> 
-                <section>
-                    <div class="split-section">
-                        <span class="active" id="t-call"> Call for Proposals </span>
-                        <span id="t-types"> Proposal Topics & Types </span>
-                        <span id="t-req"> Submission Requirements </span>
+                <section class="jumbotron" style="height: 500px;">
+                    <div class="place_time">
+                        <h1> Toronto, Canada </h1>
+                        <h3> June 5 - June 8, 2017 </h3>
                     </div>
-                    <div class="sub-section show" id="s-call">
-                        <h1> Call for Proposals </h1>
-                        <p> We are very excited to announce a Call for Proposals for the UXPA 2017 International Conference in Toronto, Canada.  
-                            <br/> <br/>
-                            The conference will be taking place Monday, June 5th thru Thursday 8th, 2017.
-                            <br/> <br/>
-                            <strong> We would love to see your proposal! </strong>
-                            <ul>
-                                <li> Submit your proposal here: <br/> <a href="https://www.conference-service.com/UXPA2017/welcome.cgi"> https://www.conference-service.com/UXPA2017/welcome.cgi </a> </li>
-                                <li> Submissions dates are: Monday, August 15th to Friday, September 16th, 2016 by 5pm Pacific Daylight Time </li>
-                            <ul>
-                            <br/> <br/>
-                            <strong> Your proposal should answer atleast one of the following questions: </strong>
-                            <ul>
-                                <li> Is there a next big thing in our UX industry? </li>
-                                <li> What are the major influences on our methods and tools? </li>
-                                <li> How can we ensure the voice of our customers are heard? </li>	 
-                                <li> What are the latest design trends? </li>
-                            <ul>
-                            <br/> <br/>
-                            Our goal for UXPA 2017 is to explore these topics and more through inspiring talks and useful hands-on experiences led by knowledgeable practitioners. We would love your ideas!!! To apply, submit your proposal here: <br/> <a href="https://www.conference-service.com/UXPA2017/welcome.cgi"> https://www.conference-service.com/UXPA2017/welcome.cgi </a> 
-                            <br/> <br/>
-                            Submissions can be submitted between Monday, August 15th through Friday, September 16th, 2016 by 5pm Pacific Daylight Time. 
-                            <br/> <br/>
-                            <strong> Proposals can accommodate one of the following audience types: </strong>
-                            <ul>
-                                <li> Beginner (new to UX) </li>
-                                <li> Intermediate (3-5 years of UX career) </li>
-                                <li> Advanced (5+ years into UX career) </li>
-                            </ul>
-                        </p>
+                    <!--<p style="padding-top: 30px;"> Submit your proposals for UXPA 2017 now. </p>-->
+                    <br/>
+                    <button style="margin-top: 30px;"> <a href="callforproposals/"> Click here to submit your proposal </a></button>
+                </section>
+                <!--<section style="height: 200px; background: #005b83;">
+                    <p style="padding-top: 30px;"> Submit your proposals for UXPA 2017 now. </p>
+                    <br/>
+                    <button> <a href="callforproposals/"> Submit your proposal </a></button>
+                    <br/>
+                    <br/>
+                    <button> <a href="#"> Call for Reviewers </a> </button>
+                </section>-->
+                <section style="background-color: #00b8b4; height: 400px;">
+                    <h2 style="padding-top: 20px;"> Meet your conference chairs </h2>
+                    <div class="chairs">
+                        <img src="Anicello_Ona.png" width="200" height="200" alt="Ona Anicello">
+                        <h3> Ona Anicello </h3>
+                        <p> Chair </p>
                     </div>
-                    <div class="sub-section" id="s-types">
-                        <h1> Proposal Topics & Types </h1>
-                        <p>
-                            Provided below are the different proposal types and topics. When you submit your proposal, you will be asked to select which topic most closely matches your submission. 
-                            <br/> <br/> 
-                            To apply, submit your proposal here: <br/> <a href="https://www.conference-service.com/UXPA2017/welcome.cgi"> https://www.conference-service.com/UXPA2017/welcome.cgi </a>  
-                            <br/> <br/>
-                            Submissions can be submitted between Monday, August 15th through Friday, September 16th, 2016 by 5pm Pacific Daylight Time. 
-                            <br/> <br/>
-                            <h3> Proposal Topics </h3>
-                            <br/>
-                            <h4> Tools & Techniques </h4>
-                            Anything UXers use to learn things, move a project along, evaluate designs, and help simplify processes. EX: journey mapping, card sorting, design studios, Bootstrap+HTML5, tree tests, and remote user testing. 
-                            <br/> <br/>
-                            <h4> Design Psychology </h4>
-                            Using knowledge from behavioral and cognitive psychology to create experiences. EX: Machine Learning, Gamification, inclusive design, immersive research, content choices, ethical design, etc. 
-                            <br/> <br/>
-                            <h4> UX Strategy </h4>
-                            The best ways to get UX practitioners involved in the bigger decisions and longer-term direction of the business. EX: Showing ROI, leveraging big data, where UX strategy sits and where should it sit within an organization, ways to involve stakeholders, Agile & UCD, Lean UX, and Lean Startup. 
-                            <br/> <br/>
-                            <h4> Innovation and Future Technologies </h4>
-                            What is the next big thing in UX and technology? EX: Designing and researching the Internet of Things, how to leverage all of this collected data, holograms, body modifications, and interactions with robotic technology. 
-                            <br/> <br/>
-                            <h4> Career Development and Management </h4>
-                            What is the next big thing in UX and technology? EX: Designing and researching the Internet of Things, how to leverage all of this collected data, holograms, body modifications, and interactions with robotic technology.
-                            <br/> <br/>
-                            <h4> Interaction Design </h4>
-                            Synthesizing user experience research and creating designs to meet customers’ needs. EX: Best practices to use pattern libraries, latest trends, principles of interaction design, designing for enterprise applications, what we can do vs. what is helpful to customers, and what fidelity is the best fidelity.
-                            <br/> <br/>
-                            <h4> Visual Design </h4>
-                            Visual communication, and problem-solving through the use of type, space, image, and color. EX: Establishing and leveraging style guides, how to increase your skills, putting basic elements and principles into practice, image blocking, responsive design, minimalism vs vintage, logo design and infographic creation and design. 
-                            <br/> <br/> <br/>
-                            <h3> Proposal Types </h3>
-                            <br/>
-                            In addition to selecting which topic your submission best fits into, please also let us know what type of presentation you will share. Provided below is the list of submission types:
-                            <br/> <br/>
-                            <h4> Full Length Presentations </h4>
-                            Presentation sessions focus on your experience with topics such as user experience research methods, philosophy, business case studies, or other relevant topics. Speakers should plan ample time for innovative audience participation within the 60-minute time allocation. That means don’t just do a Q&A – get the audience to interact with each other and with you! 
-                            <br/> <br/>
-                            <h4> Panels </h4>
-                            Panels cover the same areas of interest as presentations and consist of 3-5 experts in the topic at hand. Each person should have a different view point in order to facilitate a well-rounded discussion. Submissions should include a short, anonymous position statement from each potential panelist.
-                            <br/> <br/>
-                            <h4> Pre-Conference Courses </h4>
-                            These courses allow attendees to extend their knowledge with half-day and full-day sessions led by experienced and skilled UX professionals. These courses are classroom-style sessions, where instructors teach attendees specific user experience knowledge or skills. Courses will include presentations covering in-depth explorations of a topic, as well as discussions and activities to allow attendees to share and practice their new skills. 
-                            <br/> <br/>
-                            <h4> Posters </h4>
-                            These are a way to present research results, new ideas or concepts in an informal, visual, and interactive manner. Presenting is very informal – there will be a 60-minute time slot during which you will become the docent to your poster and present the information to those who come to listen.
-                            <br/> <br/>
-                            When creating your poster, make sure to include what you did, why, how, and what you’ve learned. It’s often helpful for submitters to include an image depicting the planned layout of the poster. There is no template for the poster design – so be creative!
-                            <br/> <br/>
-                            You will be responsible for printing your own poster and getting it to the conference location. Posters will be displayed starting the first full day of the conference. And remember, posters are a great way to start presenting at conferences! 
-                            <br/> <br/>
-                            <strong> Poster Dimensions </strong>
-                            <ul> 
-                                <li> US Standard size: 24” x 36” </li>
-                                <li> ISO Standard size: Size A1 - 59.4 x 84.1 cm </li>
-                            </ul>
-                            We highly recommend all posters are printed on foam core so they will stand up on the easels.
-                            <br/> <br/>
-                            <h4> Collaboration Sessions </h4>
-                            Collaboration sessions provide a forum for experienced practitioners to do a “deep dive” into a topic of interest during a half-day session. The leader acts as a facilitator or moderator of an advanced brainstorming session among colleagues, in which all attendees are expected to present examples and participate actively in the discussion.
-                            <br/> <br/> <br/>
-                            Before the conference, any interested attendees are required to submit a position paper describing their background in the topic and providing input to the discussion, such as case studies or lessons learned from their work relevant to the topic. Some sessions require additional pre-conference work, such as completing a survey, preparing a demo, or collecting and sharing examples for discussion with the group. 
-                            <br/> <br/>
-                            The leader selects attendees based on their position papers and their depth of experience with the topic. The leader is expected to summarize the position papers, plan activities for the session in advance, facilitate the session at the conference, and write an article for UX Magazine or JUS to describe the outcomes of the session.
-                            <br/> <br/>
-                            We are looking for topics of interest to experienced practitioners and managers of UX teams. Examples include: design standards for enterprise applications, voice interfaces or adaptive systems; integrating UX in a software development lifecycle; nurturing skill development in a UX team; managing a consultancy or an in-house design team; and pros and cons of different tools or methods for research or design.
-                        </p>    
-                    </div>
-                    <div class="sub-section" id="s-req">
-                        <h1> Submission Requirements </h1>
-                        <p>
-                            Provided below are the requirements, information about the selection process and  what to expect. 
-                            <br/> <br/>
-                            To apply submit your proposal here: <br/> <a href="https://www.conference-service.com/UXPA2017/welcome.cgi"> https://www.conference-service.com/UXPA2017/welcome.cgi </a>
-                            <br/> <br/>
-                            Submissions can be submitted between Monday, August 15th through Friday, September 16th, 2016 by 5pm Pacific Daylight Time. 
-                            <br/> <br/>
-                            <h4> What we need from you - requirements for submitting proposals </h4>
-                            <ul>
-                                <li> 600 word description of your presentation for reviewers </li>
-                                <li> 150 word description of your presentation for the program </li>
-                                <li> 140 characters or less Twitter description of your presentation </li>
-                                <li> 50 words on how your experience relates to this particular area </li>
-                                <li> 75 words on why your topic is a good fit for UXPA 2017 </li>
-                                <li> 100 word biography, so we can know more about you! </li>
-                                <li> The experience level of your expected audience, so that they can get the most bang for their buck </li>
-                                <li> <strong> Please note: </strong> Everyone who submits a proposal must also review 2 to 3 other proposals. Those who do not review the proposals assigned to them may not be considered for the program. </li>
-                            </ul>
-                            Submit as many proposals as you want! Just make sure they fit your area of expertise.
-                            <br/> <br/> <br/>
-                            <h4> Selection criteria </h4>
-                            We need presenters who have a diverse level of knowledge, experience, and qualifications. We are striving to create a balanced experience during this conference and will give every speaker the chance to provide their point of view. 
-                            <br/> <br/>
-                            Selection criteria is based on the quality of your proposal, but also based on the alignment with the overall experience we want to create during UXPA 2017. We want to ensure the conference entertains and enlightens our attendees.
-                            <br/> <br/> <br/>
-                            <h4> Submitters must review 2 to 3 proposals to be considered </h4>
-                            For every proposal submitted, we request that you complete reviews for 2 to 3 other proposals.  Those who do not review the proposals assigned to them may not be considered for the program. You will receive an email in late September with the proposals assigned to you. 
-                            <br/> <br/> <br/>
-                            <h4> Acceptance into the conference - when and how? </h4>
-                            All submitters will be notified in November about whether their submission has been accepted into the conference.
-                            <br/> <br/> <br/>
-                            <h4> What to expect if your proposal is accepted </h4>
-                            <ul>
-                                <li> Over 600 conference attendees - UX professionals and leaders from companies like Facebook, Google, Microsoft, and Twitter. </li>
-                                <li> Your presentation will impact our discipline. </li>
-                                <li> You will receive a 25% discount off conference registration. (Course instructors get $1,000 honorarium for a full day or $500 for a half day, but no discount off conference registration). </li>
-                                <li> You will have access to the Speaker Studio where you can practice your presentation skills. </li>
-                                <li> You will get a chance to meet and network with UX Professionals and Leaders. </li>
-                            <ul>
-                        </p>
+                    <div class="chairs">
+                        <img src="rodriguez_ania.jpg" width="200" height="200" alt="Ona Anicello">
+                        <h3> Ania Rodriquez </h3>
+                        <p> Co-Chair </p>
                     </div>
                 </section>
-                
+                <section style="height: 200px; background: #005b83;">
+                    <p style="padding-top: 30px;"> If you have ideas for the conference, please email us at <a href="mailto:chair2017@uxpa.org?subject=Ideas for UXPA 2017 Conference">chair2017@uxpa.org </a></p>
+                    <!-- Begin MailChimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <form action="//uxpa.us5.list-manage.com/subscribe/post?u=14bb1c0f44cfa691a8cb40f18&amp;id=37e8ba4df0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        
+                            <div id="mc_embed_signup_scroll">
+                                <label for="mce-EMAIL">For conference updates, please subscribe with your email : </label>
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_14bb1c0f44cfa691a8cb40f18_37e8ba4df0" tabindex="-1" value=""></div>
+                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--End mc_embed_signup-->  
+                </section>
             </div>
             <!--<footer> </footer>-->
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script>
-            $(document).ready(function() {
-                $("#t-call").click(function(){
-                    $(this).addClass("active");
-                    $("#t-types").removeClass("active");
-                    $("#t-req").removeClass("active");
-                    $("#s-call").addClass("show");
-                    $("#s-types").removeClass("show");
-                    $("#s-req").removeClass("show");
-                });
-                $("#t-types").click(function(){
-                    $(this).addClass("active");
-                    $("#t-call").removeClass("active");
-                    $("#t-req").removeClass("active");
-                    $("#s-call").removeClass("show");
-                    $("#s-types").addClass("show");
-                    $("#s-req").removeClass("show");
-                });
-                $("#t-req").click(function(){
-                    $(this).addClass("active");
-                    $("#t-types").removeClass("active");
-                    $("#t-call").removeClass("active");
-                    $("#s-call").removeClass("show");
-                    $("#s-types").removeClass("show");
-                    $("#s-req").addClass("show");
-                });
-            });
-        </script>
     </body>
 </html>
