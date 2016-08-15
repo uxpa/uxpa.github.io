@@ -130,18 +130,23 @@
                 padding: 0 10px;
                 font-size: 16px; 
             }
-            button {
-                background: #65B24C;
+            .button {
+                display: block;
+                margin: 30px auto 0;
+                width: 350px;
+                background: #65B24C !important;
                 border: none;
                 cursor: pointer;
                 border-radius: 7px;
                 box-shadow: 0 5px #025626;
-                padding: 10px 10px;
+                padding: 20px 10px;
                 font-size: 16px;
                 height: 60px;
+                color: #fff;
+                text-transform: uppercase;
             }
             #mc_embed_signup{width:80%; margin: 0 auto; padding: 5px 0;}
-            .button {
+            .button1 {
                 background: #fff !important;
                 color: #000 !important;
                 font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important;
@@ -169,11 +174,6 @@
                 font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif !important;
             }
 
-            button a {
-                color: #fff;
-                text-transform: uppercase;
-            }
-
             @media only screen and  (min-width: 768px) {
                 header img {
                     width: 400px;
@@ -192,10 +192,11 @@
                     width: 25%;
                 }
 
-                button {
+                .button {
                     font-size: 18px;
                     height: 75px;
                     padding: 25px 25px;
+                    width: 400px;
                 }
 
                 .clear {
@@ -220,7 +221,7 @@
                     </div>
                     <!--<p style="padding-top: 30px;"> Submit your proposals for UXPA 2017 now. </p>-->
                     <br/>
-                    <button style="margin-top: 30px;"> <a href="callforproposals/"> Click here to submit your proposal </a></button>
+                    <a class="button" href="callforproposals/"> Click here to submit your proposal </a>
                 </section>
                 <!--<section style="height: 200px; background: #005b83;">
                     <p style="padding-top: 30px;"> Submit your proposals for UXPA 2017 now. </p>
