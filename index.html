@@ -5,7 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,400italic,700italic,900italic" rel="stylesheet" type="text/css">
         <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">	
+	<meta name="viewport" content="width=device-width,initial-scale=1">	
         <link rel="shortcut icon" href="favicon.png" type="image/png">
         <style>
             * {
@@ -47,16 +47,22 @@
                 width: 100%;
                 text-align: center;
             }
+
+            header img {
+                width: 300px;
+                height: auto;
+                padding: 10px 0;
+            }
             
             .content {
                 width: 100%;
             }
             
             section {
-                
                 width: 100%;
                 text-align: center;
                 color: #fff;
+                padding: 50px 0;
             }
             
             .jumbotron {
@@ -86,11 +92,11 @@
             }
             
             .place_time h1 {
-                font-size: 5em;
+                font-size: 3em;
             }
             
             .place_time h3 {
-                font-size: 2.5em;
+                font-size: 1.5em;
             }
             
             footer {
@@ -105,10 +111,7 @@
             }
             
             .chairs {
-                /*text-align: center;*/
                 margin-top: 30px;
-                display: inline-block;
-                width: 25%;
             }
             
             .chairs p {
@@ -129,13 +132,13 @@
             }
             button {
                 background: #65B24C;
-                height: 75px;
                 border: none;
-                font-size: 18px;
                 cursor: pointer;
                 border-radius: 7px;
                 box-shadow: 0 5px #025626;
-                padding: 25px 25px;
+                padding: 10px 10px;
+                font-size: 16px;
+                height: 60px;
             }
             #mc_embed_signup{width:500px; margin: 0 auto; padding: 5px 0;}
             .button {
@@ -157,7 +160,7 @@
             }
             
             .clear {
-                display: inline-block !important;
+                
                 vertical-align: top;
             }
             
@@ -170,19 +173,45 @@
                 color: #fff;
                 text-transform: uppercase;
             }
-            /*clear:left; font:14px Helvetica,Arial,sans-serif;  */
-            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+            @media only screen and  (min-width: 768px) {
+                header img {
+                    width: 400px;
+                }
+
+                .place_time h1 {
+                    font-size: 5em;
+                }
+                
+                .place_time h3 {
+                    font-size: 2.5em;
+                }
+
+                .chairs {
+                    display: inline-block;
+                    width: 25%;
+                }
+
+                button {
+                    font-size: 18px;
+                    height: 75px;
+                    padding: 25px 25px;
+                }
+
+                .clear {
+                    display: inline-block !important;
+                }
+            }
         </style>
         
     </head>
     <body>
         <div class="container">
             <header> 
-                <img src="UXPA-2017-Logo.png" width="400" height="auto" alt="logo" style="padding: 10px 0;">
+                <img src="UXPA-2017-Logo.png">
             </header>
             <div class="content"> 
-                <section class="jumbotron" style="height: 500px;">
+                <section class="jumbotron">
                     <div class="place_time">
                         <h1> Toronto, Canada </h1>
                         <h3> June 5 - June 8, 2017 </h3>
@@ -199,8 +228,8 @@
                     <br/>
                     <button> <a href="#"> Call for Reviewers </a> </button>
                 </section>-->
-                <section style="background-color: #00b8b4; height: 400px;">
-                    <h2 style="padding-top: 20px;"> Meet your conference chairs </h2>
+                <section style="background-color: #00b8b4;">
+                    <h2 style=""> Meet your conference chairs </h2>
                     <div class="chairs">
                         <img src="Anicello_Ona.png" width="200" height="200" alt="Ona Anicello">
                         <h3> Ona Anicello </h3>
@@ -212,14 +241,17 @@
                         <p> Co-Chair </p>
                     </div>
                 </section>
-                <section style="height: 200px; background: #005b83;">
+                <section style="background: #005b83;">
                     <p style="padding-top: 30px;"> If you have ideas for the conference, please email us at <a href="mailto:chair2017@uxpa.org?subject=Ideas for UXPA 2017 Conference">chair2017@uxpa.org </a></p>
+                    <br/>
                     <!-- Begin MailChimp Signup Form -->
+                    <p>For conference updates, please subscribe with your email : </p>
                     <div id="mc_embed_signup">
                         <form action="//uxpa.us5.list-manage.com/subscribe/post?u=14bb1c0f44cfa691a8cb40f18&amp;id=37e8ba4df0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        
+                            
+                            
                             <div id="mc_embed_signup_scroll">
-                                <label for="mce-EMAIL">For conference updates, please subscribe with your email : </label>
+                                
                                 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_14bb1c0f44cfa691a8cb40f18_37e8ba4df0" tabindex="-1" value=""></div>
