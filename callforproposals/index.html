@@ -50,6 +50,12 @@
                 text-align: center;
             }
             
+            header img {
+                width: 300px;
+                height: auto;
+                padding: 10px 0;
+            }
+
             .content {
                 width: 100%;
                 margin: 50px 0;
@@ -67,12 +73,15 @@
                 background-color: #00b8b4;
                 color: #fff;
                 cursor: pointer;
+                overflow: hidden;
             }
-            .split-section span{
+            .split-section li{
+                float: left;
+                width: calc(100%/3); 
+                list-style-type: none;
                 text-align: center;
-                width: 33%;
-                display: inline-block;
                 text-transform: uppercase;
+                margin: 0;
             }
             .active {
                 background-color: #fff !important;
@@ -97,21 +106,26 @@
                 text-transform: uppercase;
                 margin-bottom: 40px;
             }
+            @media only screen and  (min-width: 768px) {
+                header img {
+                    width: 400px;
+                }
+            }
         </style>
         
     </head>
     <body>
         <div class="container">
             <header> 
-                <a href="../"> <img src="../UXPA-2017-Logo.png" width="400" height="auto" alt="logo" style="padding: 10px 0;"> </a>
+                <a href="../"> <img src="../UXPA-2017-Logo.png"> </a>
             </header>
             <div class="content"> 
                 <section>
-                    <div class="split-section">
-                        <span class="active" id="t-call"> Call for Proposals </span>
-                        <span id="t-types"> Proposal Topics & Types </span>
-                        <span id="t-req"> Submission Requirements </span>
-                    </div>
+                    <ul class="split-section">
+                        <li class="active" id="t-call"> Call for Proposals </li>
+                        <li id="t-types"> Proposal Topics & Types </li>
+                        <li id="t-req"> Submission Requirements </li>
+                    </ul>
                     <div class="sub-section show" id="s-call">
                         <h1> Call for Proposals </h1>
                         <p> We are very excited to announce a Call for Proposals for the UXPA 2017 International Conference in Toronto, Canada.  
@@ -121,10 +135,10 @@
                             <strong> We would love to see your proposal! </strong>
                             <ul>
                                 <li> Submit your proposal here: <br/> <a href="https://www.conference-service.com/UXPA2017/welcome.cgi"> https://www.conference-service.com/UXPA2017/welcome.cgi </a> </li>
-                                <li> Submissions dates are: Monday, August 15th to Friday, September 16th, 2016 by 5pm Pacific Daylight Time </li>
+                                <li> Submissions dates are: Monday, August 15th to Friday, September 16th, 2016 by 5pm Pacific Daylight Time. </li>
                             <ul>
                             <br/> <br/>
-                            <strong> Your proposal should answer atleast one of the following questions: </strong>
+                            <strong> Your proposal should answer at least one of the following questions: </strong>
                             <ul>
                                 <li> Is there a next big thing in our UX industry? </li>
                                 <li> What are the major influences on our methods and tools? </li>
@@ -168,7 +182,7 @@
                             What is the next big thing in UX and technology? EX: Designing and researching the Internet of Things, how to leverage all of this collected data, holograms, body modifications, and interactions with robotic technology. 
                             <br/> <br/>
                             <h4> Career Development and Management </h4>
-                            What is the next big thing in UX and technology? EX: Designing and researching the Internet of Things, how to leverage all of this collected data, holograms, body modifications, and interactions with robotic technology.
+                            What is the next step for your career and how are you going to get there? EX: best ways to develop hard and soft skills and large vs. small company vs. agency vs. independent contractor UXers and how to determine which is the best for you. 
                             <br/> <br/>
                             <h4> Interaction Design </h4>
                             Synthesizing user experience research and creating designs to meet customers’ needs. EX: Best practices to use pattern libraries, latest trends, principles of interaction design, designing for enterprise applications, what we can do vs. what is helpful to customers, and what fidelity is the best fidelity.
@@ -205,7 +219,7 @@
                             <br/> <br/>
                             <h4> Collaboration Sessions </h4>
                             Collaboration sessions provide a forum for experienced practitioners to do a “deep dive” into a topic of interest during a half-day session. The leader acts as a facilitator or moderator of an advanced brainstorming session among colleagues, in which all attendees are expected to present examples and participate actively in the discussion.
-                            <br/> <br/> <br/>
+                            <br/> <br/>
                             Before the conference, any interested attendees are required to submit a position paper describing their background in the topic and providing input to the discussion, such as case studies or lessons learned from their work relevant to the topic. Some sessions require additional pre-conference work, such as completing a survey, preparing a demo, or collecting and sharing examples for discussion with the group. 
                             <br/> <br/>
                             The leader selects attendees based on their position papers and their depth of experience with the topic. The leader is expected to summarize the position papers, plan activities for the session in advance, facilitate the session at the conference, and write an article for UX Magazine or JUS to describe the outcomes of the session.
