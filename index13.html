@@ -130,6 +130,12 @@
                 padding: 0 10px;
                 font-size: 16px; 
             }
+
+            .actionItems {
+                display: flex;
+                flex-direction: column;
+            }
+
             .button {
                 display: block;
                 margin: 30px auto 0;
@@ -192,6 +198,10 @@
                     width: 25%;
                 }
 
+                .actionItems {
+                    flex-direction: row;
+                }
+
                 .button {
                     font-size: 18px;
                     height: 75px;
@@ -221,8 +231,10 @@
                     </div>
                     <!--<p style="padding-top: 30px;"> Submit your proposals for UXPA 2017 now. </p>-->
                     <br/>
-                    <a class="button" href="callforproposals/"> Click to submit your proposal </a>
-                    <a class="button" href="callforreviewers/"> Click to review proposals </a>
+                    <div class="actionItems">
+                        <a class="button" href="callforproposals/"> Click to submit your proposal </a>
+                        <a class="button" href="callforreviewers/"> Click to review proposals </a>
+                    </div>
                 </section>
                 <!--<section style="height: 200px; background: #005b83;">
                     <p style="padding-top: 30px;"> Submit your proposals for UXPA 2017 now. </p>
