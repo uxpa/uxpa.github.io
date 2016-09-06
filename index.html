@@ -130,6 +130,13 @@
                 padding: 0 10px;
                 font-size: 16px; 
             }
+
+            .actionItems {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
             .button {
                 display: block;
                 margin: 30px auto 0;
@@ -139,7 +146,7 @@
                 cursor: pointer;
                 border-radius: 7px;
                 box-shadow: 0 5px #025626;
-                padding: 20px 10px;
+                padding: 20px 5px;
                 font-size: 16px;
                 height: 60px;
                 color: #fff;
@@ -192,11 +199,16 @@
                     width: 25%;
                 }
 
+                .actionItems {
+                    flex-direction: row;
+                }
+
                 .button {
                     font-size: 18px;
                     height: 75px;
                     padding: 25px 25px;
                     width: 400px;
+                    margin: 25px;
                 }
 
                 .clear {
@@ -221,7 +233,10 @@
                     </div>
                     <!--<p style="padding-top: 30px;"> Submit your proposals for UXPA 2017 now. </p>-->
                     <br/>
-                    <a class="button" href="callforproposals/"> Click here to submit your proposal </a>
+                    <div class="actionItems">
+                        <a class="button" href="callforproposals/"> Click to submit your proposal </a>
+                        <a class="button" href="callforreviewers/"> Click to review proposals </a>
+                    </div>
                 </section>
                 <!--<section style="height: 200px; background: #005b83;">
                     <p style="padding-top: 30px;"> Submit your proposals for UXPA 2017 now. </p>
