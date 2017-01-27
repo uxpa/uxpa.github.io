@@ -28,6 +28,7 @@
             a {
                 text-decoration: none;
                 cursor: pointer;
+	    	position: relative;
             }
 
             li {
@@ -187,6 +188,17 @@
 		width: 80%;
 		margin: 0 auto;
 		text-align: left;
+	    }
+	    
+	    a::after {
+		display: block;
+		content: "";
+		position: absolute;
+		height: 1px;
+		width: 100%;
+		background-color: #fff;
+		left: 0;
+		bottom: -2px;	    
 	    }
 
             @media only screen and  (min-width: 768px) {
